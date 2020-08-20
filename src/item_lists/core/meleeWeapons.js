@@ -1,4 +1,4 @@
-exports [
+ const meleeWeapons = [
     {
         name: 'Buckler',
         price: 2,
@@ -136,4 +136,6 @@ exports [
         availability: 3,
         page: '110',
     }
-]
+];
+
+export default meleeWeapons;
