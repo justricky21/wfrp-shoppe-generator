@@ -16,4 +16,4 @@ Input the size/population of the location the PC is trying to purchase from.<p>S
 
 ## Data Storage
 
-The data is stored within the `itemList.js` file. There is no need for a database.
+The data is stored within the `item_lists` folder. There is no need for a database.
