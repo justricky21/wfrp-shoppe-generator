@@ -1,30 +1,30 @@
 exports [
     {
         name: '',
-        price: '',
+        price: 0,
+coin: '',
         icon: '',
-        source: '',
         page: '',
     },
     {
         name: '',
-        price: '',
+        price: 0,
+coin: '',
         icon: '',
-        source: '',
         page: '',
     },
     {
         name: '',
-        price: '',
+        price: 0,
+coin: '',
         icon: '',
-        source: '',
         page: '',
     },
     {
         name: '',
-        price: '',
+        price: 0,
+coin: '',
         icon: '',
-        source: '',
         page: '',
     }
 ]
