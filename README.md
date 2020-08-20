@@ -8,7 +8,7 @@ This application is a store stock generator for the tabletop game Warhammer Fant
 
 ## Installation
 
-This is located under the `React_README.md` file on this repository.
+This is located under the `React_README.md` file on this repository. This will soon be on a github pages website.
 
 ## Usage
 
