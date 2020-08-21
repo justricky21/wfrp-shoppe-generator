@@ -1,0 +1,21 @@
+.app {
+    margin: 1rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+body {
+    background-color: #FDF4E3;
+    color: slategrey
+}
+
+/* 705446, E1C391, FDF4E3, 3C3431 */
