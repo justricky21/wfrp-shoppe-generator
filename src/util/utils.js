@@ -4,8 +4,6 @@
 
 export function rollItemsInArray(itemsArray, gossipScore, roll) {
     const availableItems = [];
-    // eslint-disable-next-line no-unused-vars
-    let modifiedRoll;
     itemsArray.forEach(item => {
         switch (item.availability) {
             case 1:
