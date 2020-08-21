@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PopulationDropdown from './PopulationDropdown'
 import ResultsForm from './ResultsForm'
-import { meleeWeapons } from '../item_lists/core/core'
+import * as core from '../item_lists/core'
 import { rollItemsInArray } from '../util/utils'
 
 
@@ -17,6 +17,7 @@ class MainForm extends Component {
    
     onRollPress = () => {
         const { gossipScore, gossipRoll } = this.state;
+        const { meleeWeapons } = core;
         const availableItems = rollItemsInArray(meleeWeapons, gossipScore, gossipRoll);
         this.setState({availableItems});
     }
@@ -25,8 +26,8 @@ class MainForm extends Component {
         this.setState({ availableItems: [] });
     }
 
-    onChange(newValue, stateKey) {
-        this.setState({[stateKey]: newValue})
+    onChange(e) {
+        this.setState({[e.target.name]: e.target.valueAsNumber || e.target.value})
     }
 
     render() {
@@ -36,11 +37,13 @@ class MainForm extends Component {
                 <PopulationDropdown/ >
                 <input
                     placeholder='Input gossip score...'
-                    onChange={e => this.onChange(e.target.value, 'gossipScore')}
+                    type='number'
+                    onChange={e => this.onChange(e)}
                 />
                 <input
                     placeholder='Input gossip roll...'
-                    onChange={e => this.onChange(e.target.value, 'gossipRoll')}
+                    type='number'
+                    onChange={e => this.onChange(e)}
                 />
                 <button onClick={this.onRollPress}>Roll!</button>
                 <button onClick={this.onClearPress}>Clear</button>
