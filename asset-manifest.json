@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/wfrp-shoppe-generator/static/css/main.33b1ebd1.chunk.css",
-    "main.js": "/wfrp-shoppe-generator/static/js/main.7a3bf26a.chunk.js",
-    "main.js.map": "/wfrp-shoppe-generator/static/js/main.7a3bf26a.chunk.js.map",
+    "main.js": "/wfrp-shoppe-generator/static/js/main.8f1f3b24.chunk.js",
+    "main.js.map": "/wfrp-shoppe-generator/static/js/main.8f1f3b24.chunk.js.map",
     "runtime-main.js": "/wfrp-shoppe-generator/static/js/runtime-main.244c7a82.js",
     "runtime-main.js.map": "/wfrp-shoppe-generator/static/js/runtime-main.244c7a82.js.map",
     "static/js/2.77235c7b.chunk.js": "/wfrp-shoppe-generator/static/js/2.77235c7b.chunk.js",
     "static/js/2.77235c7b.chunk.js.map": "/wfrp-shoppe-generator/static/js/2.77235c7b.chunk.js.map",
     "index.html": "/wfrp-shoppe-generator/index.html",
-    "precache-manifest.471fb446fc69a26e4d7d39b75065e2e9.js": "/wfrp-shoppe-generator/precache-manifest.471fb446fc69a26e4d7d39b75065e2e9.js",
+    "precache-manifest.1e4eb4f04e308a9733b180b392e92c22.js": "/wfrp-shoppe-generator/precache-manifest.1e4eb4f04e308a9733b180b392e92c22.js",
     "service-worker.js": "/wfrp-shoppe-generator/service-worker.js",
     "static/css/main.33b1ebd1.chunk.css.map": "/wfrp-shoppe-generator/static/css/main.33b1ebd1.chunk.css.map",
     "static/js/2.77235c7b.chunk.js.LICENSE.txt": "/wfrp-shoppe-generator/static/js/2.77235c7b.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.244c7a82.js",
     "static/js/2.77235c7b.chunk.js",
     "static/css/main.33b1ebd1.chunk.css",
-    "static/js/main.7a3bf26a.chunk.js"
+    "static/js/main.8f1f3b24.chunk.js"
   ]
 }
