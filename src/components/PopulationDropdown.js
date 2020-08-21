@@ -1,16 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
+import './PopulationDropdown.css'
 
-class PopulationDropdown extends Component {
-    render() {
-        return (
-            <select defaultValue='average'>
-                <option value='low'>Below 100</option>
-                <option value='average'>Below 1,000</option>
-                <option value='high'>Below 10,000</option>
-                <option value='vhigh'>10,000 or more</option>
-            </select>
-        )
-    }
+function PopulationDropdown() {
+    return (
+        <select defaultValue='average'>
+            <option value='low'>Below 100</option>
+            <option value='average'>Below 1,000</option>
+            <option value='high'>Below 10,000</option>
+            <option value='vhigh'>10,000 or more</option>
+        </select>
+    )
 }
 
 export default PopulationDropdown
