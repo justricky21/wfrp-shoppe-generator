@@ -20,6 +20,10 @@ class MainForm extends Component {
         const availableItems = rollItemsInArray(meleeWeapons, gossipScore, gossipRoll);
         this.setState({availableItems});
     }
+    
+    onClearPress = () => {
+        this.setState({ availableItems: [] });
+    }
 
     onChange(newValue, stateKey) {
         this.setState({[stateKey]: newValue})
@@ -39,6 +43,7 @@ class MainForm extends Component {
                     onChange={e => this.onChange(e.target.value, 'gossipRoll')}
                 />
                 <button onClick={this.onRollPress}>Roll!</button>
+                <button onClick={this.onClearPress}>Clear</button>
                 <ResultsForm availableItems={availableItems} />
             </div>
         )
