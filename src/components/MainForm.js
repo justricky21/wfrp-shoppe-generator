@@ -26,8 +26,8 @@ class MainForm extends Component {
         this.setState({ availableItems: [] });
     }
 
-    onChange(e) {
-        this.setState({[e.target.name]: e.target.valueAsNumber || e.target.value})
+    onChange(stateKey, newState) {
+        this.setState({[stateKey]: newState})
     }
 
     render() {
@@ -38,12 +38,12 @@ class MainForm extends Component {
                 <input
                     placeholder='Input gossip score...'
                     type='number'
-                    onChange={e => this.onChange(e)}
+                    onChange={e => this.onChange('gossipScore', e.target.valueAsNumber)}
                 />
                 <input
                     placeholder='Input gossip roll...'
                     type='number'
-                    onChange={e => this.onChange(e)}
+                    onChange={e => this.onChange('gossipRoll', e.target.valueAsNumber)}
                 />
                 <button onClick={this.onRollPress}>Roll!</button>
                 <button onClick={this.onClearPress}>Clear</button>
