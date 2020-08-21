@@ -5,7 +5,7 @@ export const meleeWeapons = [
         coin: 'g',
         icon: '',
         availability: 4,
-        page: '110',
+        page: '108',
     },
     {
         name: 'Dagger',
@@ -13,7 +13,7 @@ export const meleeWeapons = [
         coin: 'g',
         icon: '',
         availability: 5,
-        page: '110',
+        page: '108',
     },
     {
         name: 'Demilance (Cavalry Spear)',
@@ -21,7 +21,7 @@ export const meleeWeapons = [
         coin: 'g',
         icon: '',
         availability: 3,
-        page: '110',
+        page: '108',
     },
     {
         name: 'Flail',
@@ -29,7 +29,7 @@ export const meleeWeapons = [
         coin: 'g',
         icon: '',
         availability: 3,
-        page: '110',
+        page: '108',
     },
     {
         name: 'Foil',
@@ -37,7 +37,7 @@ export const meleeWeapons = [
         coin: 'g',
         icon: '',
         availability: 2,
-        page: '110',
+        page: '108',
     },
     {
         name: 'Gauntlet/Knuckle-duster',
@@ -45,7 +45,7 @@ export const meleeWeapons = [
         coin: 'g',
         icon: '',
         availability: 5,
-        page: '110',
+        page: '108',
     },
     {
         name: 'Great Weapon',
@@ -53,7 +53,7 @@ export const meleeWeapons = [
         coin: 'g',
         icon: '',
         availability: 4,
-        page: '110',
+        page: '108',
     },
     {
         name: 'Halberd',
@@ -61,7 +61,7 @@ export const meleeWeapons = [
         coin: 'g',
         icon: '',
         availability: 5,
-        page: '110',
+        page: '108',
     },
     {
         name: 'Hand Weapon',
@@ -69,7 +69,7 @@ export const meleeWeapons = [
         coin: 'g',
         icon: '',
         availability: 5,
-        page: '110',
+        page: '108',
     },
     {
         name: 'Lance',
@@ -77,7 +77,7 @@ export const meleeWeapons = [
         coin: 'g',
         icon: '',
         availability: 2,
-        page: '110',
+        page: '108',
     },
     {
         name: 'Main Gauche',
@@ -85,7 +85,7 @@ export const meleeWeapons = [
         coin: 'g',
         icon: '',
         availability: 3,
-        page: '110',
+        page: '108',
     },
     {
         name: 'Morning Star',
@@ -93,7 +93,7 @@ export const meleeWeapons = [
         coin: 'g',
         icon: '',
         availability: 3,
-        page: '110',
+        page: '108',
     },
     {
         name: 'Quarter Staff',
@@ -101,7 +101,7 @@ export const meleeWeapons = [
         coin: 's',
         icon: '',
         availability: 6,
-        page: '110',
+        page: '108',
     },
 
     {
@@ -110,7 +110,7 @@ export const meleeWeapons = [
         coin: 'g',
         icon: '',
         availability: 3,
-        page: '110',
+        page: '108',
     },
     {
         name: 'Shield',
@@ -118,7 +118,7 @@ export const meleeWeapons = [
         coin: 'g',
         icon: '',
         availability: 5,
-        page: '110',
+        page: '108',
     },
     {
         name: 'Spear',
@@ -126,7 +126,7 @@ export const meleeWeapons = [
         coin: 'g',
         icon: '',
         availability: 5,
-        page: '110',
+        page: '108',
     },
     {
         name: 'Sword-breaker',
@@ -134,6 +134,10 @@ export const meleeWeapons = [
         coin: 'g',
         icon: '',
         availability: 3,
-        page: '110',
+        page: '108',
     }
 ];
+
+export const rangedWeapons = [
+    
+]

@@ -5,7 +5,7 @@ class PopulationDropdown extends Component {
         return (
             <select>
                 <option value='low'>Below 100</option>
-                <option value='average'>Below 1,000</option>
+                <option selected value='average'>Below 1,000</option>
                 <option value='high'>Below 10,000</option>
                 <option value='vhigh'>10,000 or more</option>
             </select>
