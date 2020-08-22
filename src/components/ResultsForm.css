@@ -1,5 +1,7 @@
 .results {
-  background-color: #e1c391;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #fdf4e3;
 }
 
 /* 705446, E1C391, FDF4E3, 3C3431 */

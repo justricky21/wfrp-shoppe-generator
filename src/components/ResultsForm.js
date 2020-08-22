@@ -1,16 +1,16 @@
-import React from 'react'
-import './ResultsForm.css'
+import React from "react";
+import ResultsCard from "./ResultsCard";
+import "./ResultsForm.css";
 
 function ResultsForm(props) {
-    const { availableItems } = props;
-    let itemsIndex = 0;
-    return (
-        <div className='results'>
-            {availableItems.map(item => {
-                return <p key={itemsIndex++} >{item.name}</p>
-            })}
-        </div>
-    )
+  const { availableItems } = props;
+  return (
+    <div className="results">
+      {availableItems.map((group) => {
+        return <ResultsCard key={group.key} group={group} />;
+      })}
+    </div>
+  );
 }
 
-export default ResultsForm
+export default ResultsForm;
