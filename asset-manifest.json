@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/wfrp-shoppe-generator/static/css/main.148a71ab.chunk.css",
+    "main.css": "/wfrp-shoppe-generator/static/css/main.4f3345ef.chunk.css",
     "main.js": "/wfrp-shoppe-generator/static/js/main.e6dc2777.chunk.js",
     "main.js.map": "/wfrp-shoppe-generator/static/js/main.e6dc2777.chunk.js.map",
     "runtime-main.js": "/wfrp-shoppe-generator/static/js/runtime-main.244c7a82.js",
@@ -8,15 +8,15 @@
     "static/js/2.56e775f6.chunk.js": "/wfrp-shoppe-generator/static/js/2.56e775f6.chunk.js",
     "static/js/2.56e775f6.chunk.js.map": "/wfrp-shoppe-generator/static/js/2.56e775f6.chunk.js.map",
     "index.html": "/wfrp-shoppe-generator/index.html",
-    "precache-manifest.fc3dc521113105125dfe0dcd12176348.js": "/wfrp-shoppe-generator/precache-manifest.fc3dc521113105125dfe0dcd12176348.js",
+    "precache-manifest.aa90b4c3c20a03a481c405d42f337354.js": "/wfrp-shoppe-generator/precache-manifest.aa90b4c3c20a03a481c405d42f337354.js",
     "service-worker.js": "/wfrp-shoppe-generator/service-worker.js",
-    "static/css/main.148a71ab.chunk.css.map": "/wfrp-shoppe-generator/static/css/main.148a71ab.chunk.css.map",
+    "static/css/main.4f3345ef.chunk.css.map": "/wfrp-shoppe-generator/static/css/main.4f3345ef.chunk.css.map",
     "static/js/2.56e775f6.chunk.js.LICENSE.txt": "/wfrp-shoppe-generator/static/js/2.56e775f6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.244c7a82.js",
     "static/js/2.56e775f6.chunk.js",
-    "static/css/main.148a71ab.chunk.css",
+    "static/css/main.4f3345ef.chunk.css",
     "static/js/main.e6dc2777.chunk.js"
   ]
 }
