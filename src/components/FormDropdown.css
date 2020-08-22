@@ -5,6 +5,11 @@
   margin: 0 0.5rem 0 0.5rem;
   border-top-style: solid;
   border-bottom-style: solid;
+  min-width: 25vw;
+}
+
+.form-dropdown > b {
+  margin: 0.25rem 0.25rem 0 0;
 }
 
 select {
