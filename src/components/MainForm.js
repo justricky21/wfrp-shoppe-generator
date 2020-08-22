@@ -11,9 +11,30 @@ function MainForm(props) {
     onRollPress,
     onChange,
     populationBrackets,
+    resultsDisplayed,
+    nameFilter,
+    groupFilter,
   } = props;
   return (
     <form className="main-form">
+      {resultsDisplayed && (
+        <FormInput
+          placeholder="Filter by name..."
+          stateName="nameFilter"
+          type="text"
+          value={nameFilter}
+          onChange={onChange}
+        />
+      )}
+      {resultsDisplayed && (
+        <FormInput
+          placeholder="Filter by group..."
+          stateName="groupFilter"
+          type="text"
+          value={groupFilter}
+          onChange={onChange}
+        />
+      )}
       <FormDropdown
         defaultValue={0}
         label="Select the location's Population"
@@ -35,8 +56,8 @@ function MainForm(props) {
         value={gossipRoll}
         onChange={onChange}
       />
-      <button onClick={onRollPress}>Roll!</button>
-      <button onClick={onClearPress}>Clear</button>
+      <button onClick={(e) => onRollPress(e)}>Roll!</button>
+      <button onClick={(e) => onClearPress(e)}>Clear</button>
     </form>
   );
 }

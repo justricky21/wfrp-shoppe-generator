@@ -14,10 +14,13 @@ class App extends Component {
       gossipScore: 0,
       gossipRoll: 0,
       populationModifier: 0,
+      nameFilter: "",
+      groupFilter: "",
     };
   }
 
-  onRollPress = () => {
+  onRollPress = (e) => {
+    e.preventDefault();
     const { gossipScore, gossipRoll, populationModifier } = this.state;
     const availableItems = rollItemsInArray(
       core,
@@ -32,12 +35,15 @@ class App extends Component {
     this.setState({ [stateKey]: newState });
   };
 
-  onClearPress = () => {
+  onClearPress = (e) => {
+    e.preventDefault();
     this.setState({
       gossipScore: 0,
       gossipRoll: 0,
       populationModifier: 0,
       availableItems: [],
+      nameFilter: "",
+      groupFilter: "",
     });
   };
 
@@ -51,10 +57,13 @@ class App extends Component {
       gossipScore,
       gossipRoll,
       populationModifier,
+      nameFilter,
+      groupFilter,
     } = this.state;
     return (
       <div className="app">
         <MainForm
+          resultsDisplayed={availableItems.length > 0}
           gossipScore={gossipScore}
           gossipRoll={gossipRoll}
           onRollPress={this.onRollPress}
@@ -65,7 +74,11 @@ class App extends Component {
           populationModifier={populationModifier}
         />
         {availableItems.length > 0 && (
-          <Results availableItems={availableItems} />
+          <Results
+            availableItems={availableItems}
+            nameFilter={nameFilter}
+            groupFilter={groupFilter}
+          />
         )}
       </div>
     );

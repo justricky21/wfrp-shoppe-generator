@@ -5,7 +5,7 @@ function FormDropdown(props) {
   const { options, defaultValue, label, onChange, stateName } = props;
   return (
     <div className="form-dropdown">
-      <b>{label}</b>
+      {label && <b>{label}</b>}
       <select
         defaultValue={defaultValue}
         onChange={(e) => onChange(stateName, e.target.value)}
