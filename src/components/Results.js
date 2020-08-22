@@ -13,11 +13,13 @@ function Results(props) {
       const groupToReturn = group.availableGroupItems.filter((item) => {
         return item.name.toLowerCase().includes(itemFilter.toLowerCase());
       });
-      itemFilteredArray.push({
-        key: key,
-        label: label,
-        availableGroupItems: groupToReturn,
-      });
+      if (groupToReturn.length > 0) {
+        itemFilteredArray.push({
+          key: key,
+          label: label,
+          availableGroupItems: groupToReturn,
+        });
+      }
     });
     itemsToDisplay = itemFilteredArray;
   }
