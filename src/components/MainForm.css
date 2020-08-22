@@ -1,11 +1,17 @@
 .main-form {
   display: flex;
   flex-flow: column wrap;
-  height: 75vh;
+  align-items: stretch;
+  height: 100vh;
   background-color: #e1c391;
   border-right-style: solid;
   border-right-width: 1px;
-  padding-top: 50%;
+}
+
+.main-form > div,
+.main-form > button {
+  position: relative;
+  top: 8rem;
 }
 
 button {
