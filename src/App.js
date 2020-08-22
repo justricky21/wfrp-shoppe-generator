@@ -14,7 +14,7 @@ class App extends Component {
       gossipScore: 0,
       gossipRoll: 0,
       populationModifier: 0,
-      nameFilter: "",
+      itemFilter: "",
       groupFilter: "",
     };
   }
@@ -42,7 +42,7 @@ class App extends Component {
       gossipRoll: 0,
       populationModifier: 0,
       availableItems: [],
-      nameFilter: "",
+      itemFilter: "",
       groupFilter: "",
     });
   };
@@ -57,7 +57,7 @@ class App extends Component {
       gossipScore,
       gossipRoll,
       populationModifier,
-      nameFilter,
+      itemFilter,
       groupFilter,
     } = this.state;
     return (
@@ -76,7 +76,7 @@ class App extends Component {
         {availableItems.length > 0 && (
           <Results
             availableItems={availableItems}
-            nameFilter={nameFilter}
+            itemFilter={itemFilter}
             groupFilter={groupFilter}
           />
         )}

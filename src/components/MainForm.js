@@ -12,7 +12,7 @@ function MainForm(props) {
     onChange,
     populationBrackets,
     resultsDisplayed,
-    nameFilter,
+    itemFilter,
     groupFilter,
   } = props;
   return (
@@ -20,9 +20,9 @@ function MainForm(props) {
       {resultsDisplayed && (
         <FormInput
           placeholder="Filter by name..."
-          stateName="nameFilter"
+          stateName="itemFilter"
           type="text"
-          value={nameFilter}
+          value={itemFilter}
           onChange={onChange}
         />
       )}

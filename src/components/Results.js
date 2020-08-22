@@ -3,10 +3,27 @@ import ResultsCard from "./ResultsCard";
 import "./Results.css";
 
 function Results(props) {
-  const { availableItems, nameFilter, groupFilter } = props;
+  const { availableItems, itemFilter, groupFilter } = props;
   let itemsToDisplay = availableItems;
+
+  if (itemFilter) {
+    const itemFilteredArray = [];
+    itemsToDisplay.forEach((group) => {
+      const { key, label } = group;
+      const groupToReturn = group.availableGroupItems.filter((item) => {
+        return item.name.toLowerCase().includes(itemFilter.toLowerCase());
+      });
+      itemFilteredArray.push({
+        key: key,
+        label: label,
+        availableGroupItems: groupToReturn,
+      });
+    });
+    itemsToDisplay = itemFilteredArray;
+  }
+
   if (groupFilter) {
-    itemsToDisplay = availableItems.filter((group) => {
+    itemsToDisplay = itemsToDisplay.filter((group) => {
       return group.label.toLowerCase().includes(groupFilter.toLowerCase());
     });
   }
