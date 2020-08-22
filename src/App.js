@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import MainForm from "./components/MainForm";
 import ResultsForm from "./components/ResultsForm";
 import "./App.css";
-import * as core from "./item_lists/core";
+import core from "./item_lists/core";
 import { rollItemsInArray } from "./util/utils";
 
 class App extends Component {
@@ -17,12 +17,7 @@ class App extends Component {
 
   onRollPress = () => {
     const { gossipScore, gossipRoll } = this.state;
-    const { meleeWeapons } = core;
-    const availableItems = rollItemsInArray(
-      meleeWeapons,
-      gossipScore,
-      gossipRoll
-    );
+    const availableItems = rollItemsInArray(core, gossipScore, gossipRoll);
     this.onSetAvailableItems(availableItems);
   };
 
@@ -34,8 +29,8 @@ class App extends Component {
     this.setState({ availableItems: [] });
   };
 
-  onSetAvailableItems = async (availableItems) => {
-    await this.setState({ availableItems });
+  onSetAvailableItems = (availableItems) => {
+    this.setState({ availableItems });
   };
 
   render() {
