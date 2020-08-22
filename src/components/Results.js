@@ -1,8 +1,8 @@
 import React from "react";
 import ResultsCard from "./ResultsCard";
-import "./ResultsForm.css";
+import "./Results.css";
 
-function ResultsForm(props) {
+function Results(props) {
   const { availableItems } = props;
   return (
     <div className="results">
@@ -13,4 +13,4 @@ function ResultsForm(props) {
   );
 }
 
-export default ResultsForm;
+export default Results;

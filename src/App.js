@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import MainForm from "./components/MainForm";
-import ResultsForm from "./components/ResultsForm";
+import Results from "./components/Results";
 import "./App.css";
 import core from "./item_lists/core";
 import { rollItemsInArray } from "./util/utils";
@@ -46,7 +46,12 @@ class App extends Component {
   };
 
   render() {
-    const { availableItems, gossipScore, gossipRoll } = this.state;
+    const {
+      availableItems,
+      gossipScore,
+      gossipRoll,
+      populationModifier,
+    } = this.state;
     return (
       <div className="app">
         <MainForm
@@ -57,9 +62,10 @@ class App extends Component {
           onChange={this.onChange}
           onSetAvailableItems={this.onSetAvailableItems}
           populationBrackets={populationBrackets}
+          populationModifier={populationModifier}
         />
         {availableItems.length > 0 && (
-          <ResultsForm availableItems={availableItems} />
+          <Results availableItems={availableItems} />
         )}
       </div>
     );

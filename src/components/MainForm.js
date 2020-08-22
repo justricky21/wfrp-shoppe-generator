@@ -13,7 +13,7 @@ function MainForm(props) {
     populationBrackets,
   } = props;
   return (
-    <div className="main-form">
+    <form className="main-form">
       <FormDropdown
         defaultValue={0}
         label="Select the location's Population"
@@ -37,7 +37,7 @@ function MainForm(props) {
       />
       <button onClick={onRollPress}>Roll!</button>
       <button onClick={onClearPress}>Clear</button>
-    </div>
+    </form>
   );
 }
 
