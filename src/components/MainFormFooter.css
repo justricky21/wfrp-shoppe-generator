@@ -1,0 +1,9 @@
+.main-form-footer {
+  display: inline;
+}
+
+.main-form-footer > button {
+  margin-left: 0.3rem;
+  width: 40%;
+  border-radius: 1rem;
+}

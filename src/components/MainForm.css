@@ -1,23 +1,11 @@
 .main-form {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: stretch;
+  background-color: #e1c391;
+
   min-height: 100vh;
   overflow: auto;
-  background-color: #e1c391;
   border-right-style: solid;
-  border-right-width: 1px;
 }
 
-.main-form > div,
-.main-form > button {
+.main-form > div {
   position: relative;
-  top: 8rem;
-}
-
-button {
-  margin: 0.5rem 25% 0 25%;
-  width: 25%;
-  align-self: center;
-  border-radius: 1rem;
 }

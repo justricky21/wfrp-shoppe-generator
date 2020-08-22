@@ -1,6 +1,7 @@
 import React from "react";
 import FormInput from "./FormInput";
 import FormDropdown from "./FormDropdown";
+import MainFormFooter from "./MainFormFooter";
 import "./MainForm.css";
 
 function MainForm(props) {
@@ -17,24 +18,6 @@ function MainForm(props) {
   } = props;
   return (
     <form className="main-form">
-      {resultsDisplayed && (
-        <FormInput
-          placeholder="Filter by name..."
-          stateName="itemFilter"
-          type="text"
-          value={itemFilter}
-          onChange={onChange}
-        />
-      )}
-      {resultsDisplayed && (
-        <FormInput
-          placeholder="Filter by group..."
-          stateName="groupFilter"
-          type="text"
-          value={groupFilter}
-          onChange={onChange}
-        />
-      )}
       <FormDropdown
         defaultValue={0}
         label="Select the location's Population"
@@ -56,8 +39,25 @@ function MainForm(props) {
         value={gossipRoll}
         onChange={onChange}
       />
-      <button onClick={(e) => onRollPress(e)}>Roll!</button>
-      <button onClick={(e) => onClearPress(e)}>Clear</button>
+      {resultsDisplayed && (
+        <FormInput
+          placeholder="Filter by name..."
+          stateName="itemFilter"
+          type="text"
+          value={itemFilter}
+          onChange={onChange}
+        />
+      )}
+      {resultsDisplayed && (
+        <FormInput
+          placeholder="Filter by group..."
+          stateName="groupFilter"
+          type="text"
+          value={groupFilter}
+          onChange={onChange}
+        />
+      )}
+      <MainFormFooter onRollPress={onRollPress} onClearPress={onClearPress} />
     </form>
   );
 }
