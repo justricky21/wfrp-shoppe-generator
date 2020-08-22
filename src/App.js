@@ -12,6 +12,7 @@ class App extends Component {
       availableItems: [],
       gossipScore: 0,
       gossipRoll: 0,
+      populationModifier: 0,
     };
   }
 
