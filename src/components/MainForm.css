@@ -1,8 +1,7 @@
 .main-form {
   background-color: #e1c391;
-
   min-height: 100vh;
-  overflow: auto;
+  overflow-y: auto;
   border-right-style: solid;
 }
 
