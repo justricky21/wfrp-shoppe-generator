@@ -36,14 +36,14 @@ class MainForm extends Component {
       <div className="main-form">
         <PopulationDropdown />
         <FormInput
-          label="Input gossip score..."
+          label="Input Gossip score..."
           stateName="gossipScore"
           type="number"
           value={gossipScore}
           onChange={this.onChange}
         />
         <FormInput
-          label="Input gossip roll..."
+          label="Input Gossip roll..."
           stateName="gossipRoll"
           type="number"
           value={gossipRoll}
