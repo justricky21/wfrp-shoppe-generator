@@ -803,7 +803,7 @@ export default [
         page: "118",
       },
       {
-        name: "Writing KIt",
+        name: "Writing Kit",
         price: 10,
         availability: 4,
         coin: "g",
