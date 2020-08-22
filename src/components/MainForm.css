@@ -1,0 +1,16 @@
+.main-form {
+  display: flex;
+  flex-flow: column wrap;
+  height: 75vh;
+  background-color: #e1c391;
+  border-right-style: solid;
+  border-right-width: 1px;
+  padding-top: 50%;
+}
+
+button {
+  margin: 0.5rem 25% 0 25%;
+  width: 25%;
+  align-self: center;
+  border-radius: 1rem;
+}
