@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "87eb73750da534c211068877de2b336d",
+    "revision": "cfee134579a36830c1f1f2a1cdfdf7c8",
     "url": "/wfrp-shoppe-generator/index.html"
   },
   {
-    "revision": "7649da14c6d267980cb9",
+    "revision": "6fdd6795beafb94b6f02",
     "url": "/wfrp-shoppe-generator/static/css/main.4f3345ef.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wfrp-shoppe-generator/static/js/2.56e775f6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7649da14c6d267980cb9",
-    "url": "/wfrp-shoppe-generator/static/js/main.e6dc2777.chunk.js"
+    "revision": "6fdd6795beafb94b6f02",
+    "url": "/wfrp-shoppe-generator/static/js/main.b56f5459.chunk.js"
   },
   {
     "revision": "ba81537debefa5d4a514",
