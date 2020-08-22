@@ -2,7 +2,6 @@ import React from "react";
 import FormInput from "./FormInput";
 import FormDropdown from "./FormDropdown";
 import "./MainForm.css";
-import { populationBrackets } from "../util/constants";
 
 function MainForm(props) {
   const {
@@ -11,6 +10,7 @@ function MainForm(props) {
     gossipRoll,
     onRollPress,
     onChange,
+    populationBrackets,
   } = props;
   return (
     <div className="main-form">
