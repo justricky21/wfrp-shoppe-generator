@@ -333,6 +333,44 @@ export default [
     ],
   },
   {
+    key: "ammunition",
+    label: "Ammunition",
+    groupItems: [
+      {
+        name: "Arrows (5)",
+        price: 1,
+        availability: 5,
+        coin: "s",
+        icon: "",
+        page: "108",
+      },
+      {
+        name: "Bolts (5)",
+        price: 2,
+        availability: 4,
+        coin: "s",
+        icon: "",
+        page: "108",
+      },
+      {
+        name: "Firearm Shot (10)",
+        price: 1,
+        availability: 2,
+        coin: "s",
+        icon: "",
+        page: "108",
+      },
+      {
+        name: "Gunpowder (per shot)",
+        price: 3,
+        availability: 1,
+        coin: "s",
+        icon: "",
+        page: "108",
+      },
+    ],
+  },
+  {
     key: "advancedArmour",
     label: "Advanced Armour",
     groupItems: [
