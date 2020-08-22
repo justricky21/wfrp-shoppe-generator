@@ -1,0 +1,22 @@
+.form-dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  margin: 0 0.5rem 0 0.5rem;
+  border-top-style: solid;
+  border-bottom-style: solid;
+}
+
+select {
+  background: none;
+  border-style: solid;
+  border-width: 0.5px;
+  border-radius: 1rem;
+  text-align: center;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+option {
+  align-items: center;
+}
