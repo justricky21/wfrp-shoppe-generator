@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "09c386b874fcc15e60cb1a51423c293a",
+    "revision": "410c940c52c122cd4d375afcb8906802",
     "url": "/wfrp-shoppe-generator/index.html"
   },
   {
-    "revision": "912b21d3c7f005b8ab9f",
+    "revision": "c88ac137664444680ba2",
     "url": "/wfrp-shoppe-generator/static/css/main.d17960a6.chunk.css"
   },
   {
-    "revision": "ec6fae2329579023f784",
-    "url": "/wfrp-shoppe-generator/static/js/2.62fc9086.chunk.js"
+    "revision": "f5409496cf886c94d9c8",
+    "url": "/wfrp-shoppe-generator/static/js/2.60821bd2.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/wfrp-shoppe-generator/static/js/2.62fc9086.chunk.js.LICENSE.txt"
+    "url": "/wfrp-shoppe-generator/static/js/2.60821bd2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "912b21d3c7f005b8ab9f",
-    "url": "/wfrp-shoppe-generator/static/js/main.e700241f.chunk.js"
+    "revision": "c88ac137664444680ba2",
+    "url": "/wfrp-shoppe-generator/static/js/main.fcafc330.chunk.js"
   },
   {
     "revision": "ba81537debefa5d4a514",
