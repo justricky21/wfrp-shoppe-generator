@@ -4,6 +4,7 @@ import ResultsForm from "./components/ResultsForm";
 import "./App.css";
 import core from "./item_lists/core";
 import { rollItemsInArray } from "./util/utils";
+import { populationBrackets } from "./util/constants";
 
 class App extends Component {
   constructor() {
@@ -17,8 +18,13 @@ class App extends Component {
   }
 
   onRollPress = () => {
-    const { gossipScore, gossipRoll } = this.state;
-    const availableItems = rollItemsInArray(core, gossipScore, gossipRoll);
+    const { gossipScore, gossipRoll, populationModifier } = this.state;
+    const availableItems = rollItemsInArray(
+      core,
+      gossipScore,
+      gossipRoll,
+      populationModifier
+    );
     this.onSetAvailableItems(availableItems);
   };
 
@@ -46,6 +52,7 @@ class App extends Component {
           onClearPress={this.onClearPress}
           onChange={this.onChange}
           onSetAvailableItems={this.onSetAvailableItems}
+          populationBrackets={populationBrackets}
         />
         {availableItems.length > 0 && (
           <ResultsForm availableItems={availableItems} />

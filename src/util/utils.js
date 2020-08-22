@@ -3,13 +3,20 @@
 //     return Math.random() * (1 - 100) + 1;
 // }
 
-export function rollItemsInArray(itemGroups, gossipScore, roll) {
+export function rollItemsInArray(
+  itemGroups,
+  gossipScore,
+  roll,
+  populationModifier
+) {
   const availableItems = [];
   itemGroups.forEach((group) => {
     const availableGroupItems = [];
     const { label, key, groupItems } = group;
     groupItems.forEach((item) => {
-      switch (item.availability) {
+      const modifiedAvailabity =
+        parseInt(populationModifier) + item.availability;
+      switch (modifiedAvailabity) {
         case 1:
           if (gossipScore - 30 >= roll) {
             availableGroupItems.push(item);
@@ -46,6 +53,9 @@ export function rollItemsInArray(itemGroups, gossipScore, roll) {
           }
           break;
         default:
+          if (item.availability > 7) {
+            availableGroupItems.push(item);
+          }
           break;
       }
     });
