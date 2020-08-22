@@ -1,7 +1,8 @@
 import React from "react";
-import PopulationDropdown from "./PopulationDropdown";
 import FormInput from "./FormInput";
+import FormDropdown from "./FormDropdown";
 import "./MainForm.css";
+import { populationBrackets } from "../util/constants";
 
 function MainForm(props) {
   const {
@@ -13,7 +14,13 @@ function MainForm(props) {
   } = props;
   return (
     <div className="main-form">
-      <PopulationDropdown />
+      <FormDropdown
+        defaultValue={0}
+        label="Select the location's Population"
+        options={populationBrackets}
+        stateName="populationModifier"
+        onChange={onChange}
+      />
       <FormInput
         label="Input Gossip score..."
         stateName="gossipScore"
