@@ -30,7 +30,7 @@ function Results(props) {
     });
   }
   return (
-    <div className="results">
+    <div className="results fade-in">
       {itemsToDisplay.map((group) => {
         return <ResultsCard key={group.key} group={group} />;
       })}

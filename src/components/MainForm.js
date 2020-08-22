@@ -41,6 +41,7 @@ function MainForm(props) {
       />
       {resultsDisplayed && (
         <FormInput
+          fadeIn
           placeholder="Filter by name..."
           stateName="itemFilter"
           type="text"
@@ -50,6 +51,7 @@ function MainForm(props) {
       )}
       {resultsDisplayed && (
         <FormInput
+          fadeIn
           placeholder="Filter by group..."
           stateName="groupFilter"
           type="text"
