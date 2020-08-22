@@ -47,3 +47,22 @@ export function rollItemsInArray(itemsArray, gossipScore, roll) {
     })
     return availableItems;
 }
+
+export const populationBrackets = [
+    {
+        label: 'Below 100',
+        value: 'low'
+    },
+    {
+        label: 'Below 1,000',
+        value: 'average'
+    },
+    {
+        label: 'Below 10,000',
+        value: 'high'
+    },
+    {
+        label: '10,000 or more',
+        value: 'vhigh'
+    }
+]
