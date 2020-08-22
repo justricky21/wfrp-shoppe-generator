@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/wfrp-shoppe-generator/static/css/main.2d1e8287.chunk.css",
-    "main.js": "/wfrp-shoppe-generator/static/js/main.9859f564.chunk.js",
-    "main.js.map": "/wfrp-shoppe-generator/static/js/main.9859f564.chunk.js.map",
+    "main.css": "/wfrp-shoppe-generator/static/css/main.4618247c.chunk.css",
+    "main.js": "/wfrp-shoppe-generator/static/js/main.6a8a76eb.chunk.js",
+    "main.js.map": "/wfrp-shoppe-generator/static/js/main.6a8a76eb.chunk.js.map",
     "runtime-main.js": "/wfrp-shoppe-generator/static/js/runtime-main.244c7a82.js",
     "runtime-main.js.map": "/wfrp-shoppe-generator/static/js/runtime-main.244c7a82.js.map",
     "static/js/2.56e775f6.chunk.js": "/wfrp-shoppe-generator/static/js/2.56e775f6.chunk.js",
     "static/js/2.56e775f6.chunk.js.map": "/wfrp-shoppe-generator/static/js/2.56e775f6.chunk.js.map",
     "index.html": "/wfrp-shoppe-generator/index.html",
-    "precache-manifest.c317f8b519cced75059cc6c8ccc3ae7d.js": "/wfrp-shoppe-generator/precache-manifest.c317f8b519cced75059cc6c8ccc3ae7d.js",
+    "precache-manifest.3904df14904bc66f13840d9587b7500e.js": "/wfrp-shoppe-generator/precache-manifest.3904df14904bc66f13840d9587b7500e.js",
     "service-worker.js": "/wfrp-shoppe-generator/service-worker.js",
-    "static/css/main.2d1e8287.chunk.css.map": "/wfrp-shoppe-generator/static/css/main.2d1e8287.chunk.css.map",
+    "static/css/main.4618247c.chunk.css.map": "/wfrp-shoppe-generator/static/css/main.4618247c.chunk.css.map",
     "static/js/2.56e775f6.chunk.js.LICENSE.txt": "/wfrp-shoppe-generator/static/js/2.56e775f6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.244c7a82.js",
     "static/js/2.56e775f6.chunk.js",
-    "static/css/main.2d1e8287.chunk.css",
-    "static/js/main.9859f564.chunk.js"
+    "static/css/main.4618247c.chunk.css",
+    "static/js/main.6a8a76eb.chunk.js"
   ]
 }
