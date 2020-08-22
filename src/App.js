@@ -33,7 +33,12 @@ class App extends Component {
   };
 
   onClearPress = () => {
-    this.setState({ availableItems: [] });
+    this.setState({
+      gossipScore: 0,
+      gossipRoll: 0,
+      populationModifier: 0,
+      availableItems: [],
+    });
   };
 
   onSetAvailableItems = (availableItems) => {
@@ -42,7 +47,6 @@ class App extends Component {
 
   render() {
     const { availableItems, gossipScore, gossipRoll } = this.state;
-
     return (
       <div className="app">
         <MainForm
