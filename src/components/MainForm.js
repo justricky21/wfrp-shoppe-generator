@@ -2,6 +2,7 @@ import React from "react";
 import FormInput from "./FormInput";
 import FormDropdown from "./FormDropdown";
 import MainFormFooter from "./MainFormFooter";
+import FormCheckbox from "./FormCheckbox";
 import "./MainForm.css";
 
 function MainForm(props) {
@@ -16,6 +17,8 @@ function MainForm(props) {
     itemFilter,
     groupFilter,
     populationModifier,
+    autoRoll,
+    individualAutoRoll,
   } = props;
   return (
     <form className="main-form">
@@ -41,6 +44,22 @@ function MainForm(props) {
         value={gossipRoll}
         onChange={onChange}
       />
+      <FormCheckbox
+        label="Have the tool roll for you?"
+        stateName="autoRoll"
+        value={autoRoll}
+        onChange={onChange}
+      />
+      {autoRoll && (
+        <FormCheckbox
+          fadeIn
+          label="Have the roll happen individually?"
+          stateName="individualAutoRoll"
+          value={individualAutoRoll}
+          onChange={onChange}
+        />
+      )}
+      <MainFormFooter onRollPress={onRollPress} onClearPress={onClearPress} />
       {resultsDisplayed && (
         <FormInput
           fadeIn
@@ -61,7 +80,6 @@ function MainForm(props) {
           onChange={onChange}
         />
       )}
-      <MainFormFooter onRollPress={onRollPress} onClearPress={onClearPress} />
     </form>
   );
 }
