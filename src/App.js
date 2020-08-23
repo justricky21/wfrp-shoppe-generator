@@ -23,12 +23,20 @@ class App extends Component {
 
   onRollPress = (e) => {
     e.preventDefault();
-    const { gossipScore, gossipRoll, populationModifier } = this.state;
+    const {
+      gossipScore,
+      gossipRoll,
+      populationModifier,
+      autoRoll,
+      individualAutoRoll,
+    } = this.state;
     const availableItems = rollItemsInArray(
       core,
       gossipScore,
       gossipRoll,
-      populationModifier
+      populationModifier,
+      autoRoll,
+      individualAutoRoll
     );
     this.onSetAvailableItems(availableItems);
   };
