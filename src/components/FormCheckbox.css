@@ -1,0 +1,8 @@
+.form-checkbox {
+  margin: 0.25rem 1rem 0.25rem 1rem;
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: space-between;
+}
