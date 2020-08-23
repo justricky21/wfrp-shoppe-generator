@@ -10,10 +10,8 @@ export const rollItemsInArray = (
   autoRoll,
   individualAutoRoll
 ) => {
-  console.log(autoRoll);
   const availableItems = [];
-  const diceRoll = autoRoll ? rolld100() : roll;
-  console.log(diceRoll);
+  let diceRoll = autoRoll ? rolld100() : roll;
   itemGroups.forEach((group) => {
     const availableGroupItems = [];
     const { label, key, groupItems } = group;
@@ -22,6 +20,9 @@ export const rollItemsInArray = (
         parseInt(populationModifier) + item.availability;
       switch (modifiedAvailabity) {
         case 1:
+          if (autoRoll && individualAutoRoll) {
+            diceRoll = rolld100();
+          }
           if (gossipScore - 30 >= diceRoll) {
             availableGroupItems.push(item);
           }
