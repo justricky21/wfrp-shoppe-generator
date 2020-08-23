@@ -16,6 +16,8 @@ class App extends Component {
       populationModifier: 0,
       itemFilter: "",
       groupFilter: "",
+      autoRoll: false,
+      individualAutoRoll: false,
     };
   }
 
@@ -44,6 +46,8 @@ class App extends Component {
       availableItems: [],
       itemFilter: "",
       groupFilter: "",
+      autoRoll: false,
+      individualAutoRoll: false,
     });
   };
 
@@ -59,6 +63,8 @@ class App extends Component {
       populationModifier,
       itemFilter,
       groupFilter,
+      autoRoll,
+      individualAutoRoll,
     } = this.state;
     return (
       <div className="app">
@@ -72,6 +78,8 @@ class App extends Component {
           onSetAvailableItems={this.onSetAvailableItems}
           populationBrackets={populationBrackets}
           populationModifier={populationModifier}
+          autoRoll={autoRoll}
+          individualAutoRoll={individualAutoRoll}
         />
         {availableItems.length > 0 && (
           <Results
