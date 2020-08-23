@@ -22,7 +22,7 @@ function FormInput(props) {
         onChange={(e) =>
           onChange(
             stateName,
-            type === "number" ? e.target.valueAsNumber : e.target.value
+            type === "number" && value ? e.target.valueAsNumber : e.target.value
           )
         }
       />

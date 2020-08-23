@@ -5,7 +5,7 @@ function FormCheckbox(props) {
   const { label, onChange, stateName, fadeIn, value } = props;
   return (
     <div className={`form-checkbox ${fadeIn && "fade-in"}`}>
-      <label class="checkbox-container">
+      <label className="checkbox-container">
         <b>{label}</b>
         <input
           checked={value}
