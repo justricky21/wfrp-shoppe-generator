@@ -43,6 +43,7 @@ function MainForm(props) {
         type="number"
         value={gossipRoll}
         onChange={onChange}
+        disabled={autoRoll}
       />
       <FormCheckbox
         label="Have the tool roll for you?"
@@ -53,7 +54,7 @@ function MainForm(props) {
       {autoRoll && (
         <FormCheckbox
           fadeIn
-          label="Have the roll happen individually?"
+          label="Have the roll happen individually, per item?"
           stateName="individualAutoRoll"
           value={individualAutoRoll}
           onChange={onChange}

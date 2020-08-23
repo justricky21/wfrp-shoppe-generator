@@ -10,13 +10,15 @@ function FormInput(props) {
     stateName,
     fadeIn,
     value,
+    disabled,
   } = props;
   return (
-    <div className={`form-input form-input-${type} ${fadeIn && "fade-in"}`}>
+    <div className={`form-input form-input-${type} ${fadeIn && "fade-in"}  `}>
       {label && <b>{label}</b>}
       <input
-        value={value}
-        className={`input input-${type}`}
+        disabled={disabled}
+        value={disabled ? "" : value}
+        className={`input input-${type} ${disabled && "disabled"}`}
         placeholder={placeholder}
         type={type}
         onChange={(e) =>
