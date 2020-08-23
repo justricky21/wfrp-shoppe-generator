@@ -11,8 +11,8 @@ class App extends Component {
     super();
     this.state = {
       availableItems: [],
-      gossipScore: 0,
-      gossipRoll: 0,
+      gossipScore: "",
+      gossipRoll: "",
       populationModifier: 0,
       itemFilter: "",
       groupFilter: "",
@@ -38,8 +38,8 @@ class App extends Component {
   onClearPress = (e) => {
     e.preventDefault();
     this.setState({
-      gossipScore: 0,
-      gossipRoll: 0,
+      gossipScore: "",
+      gossipRoll: "",
       populationModifier: 0,
       availableItems: [],
       itemFilter: "",

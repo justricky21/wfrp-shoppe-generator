@@ -15,6 +15,7 @@ function MainForm(props) {
     resultsDisplayed,
     itemFilter,
     groupFilter,
+    populationModifier,
   } = props;
   return (
     <form className="main-form">
@@ -23,6 +24,7 @@ function MainForm(props) {
         label="Select the location's Population"
         options={populationBrackets}
         stateName="populationModifier"
+        value={populationModifier}
         onChange={onChange}
       />
       <FormInput
