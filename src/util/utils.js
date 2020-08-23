@@ -1,5 +1,5 @@
 // added this so future Ricardo doesn't have to
-// function rolld100() {
+// export function rolld100() {
 //     return Math.random() * (1 - 100) + 1;
 // }
 
