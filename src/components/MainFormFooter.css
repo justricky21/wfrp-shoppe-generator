@@ -2,6 +2,7 @@
   display: inline-flex;
   justify-content: space-between;
   align-self: center;
+  margin-top: 0.25rem;
 }
 
 button {
