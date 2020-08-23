@@ -1,4 +1,6 @@
 .main-form {
+  display: flex;
+  flex-direction: column;
   background-color: #e1c391;
   min-height: 100vh;
   overflow-y: auto;
@@ -7,4 +9,5 @@
 
 .main-form > div {
   position: relative;
+  top: 8rem;
 }

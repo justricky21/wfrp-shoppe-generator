@@ -1,8 +1,26 @@
 .main-form-footer {
-  display: block;
+  display: inline-flex;
+  justify-content: space-between;
+  align-self: center;
 }
 
-.main-form-footer > button {
+button {
   margin-left: 0.3rem;
   border-radius: 1rem;
+  cursor: pointer;
+  outline: none;
+  color: #444;
+  background-color: #e7e7db;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 1px #74746e;
+}
+
+button:hover {
+  background-color: #d0d0c5;
+}
+
+button:active {
+  background-color: #a2a299;
+  transform: translateY(1px);
 }

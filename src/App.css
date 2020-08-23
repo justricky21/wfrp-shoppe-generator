@@ -69,7 +69,7 @@ body {
 
 .app {
   display: grid;
-  grid-template-columns: repeat(6, minmax(200px, 1fr));
+  grid-template-columns: repeat(6, 200px);
 }
 
 /* 705446, E1C391, FDF4E3, 3C3431 */

@@ -12,11 +12,11 @@ function FormInput(props) {
     value,
   } = props;
   return (
-    <div className={`form-input-${type} ${fadeIn && "fade-in"}`}>
+    <div className={`form-input form-input-${type} ${fadeIn && "fade-in"}`}>
       {label && <b>{label}</b>}
       <input
         value={value}
-        className={`input-${type}`}
+        className={`input input-${type}`}
         placeholder={placeholder}
         type={type}
         onChange={(e) =>
