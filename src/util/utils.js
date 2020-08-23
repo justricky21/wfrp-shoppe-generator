@@ -1,15 +1,19 @@
-// added this so future Ricardo doesn't have to
-// export function rolld100() {
-//     return Math.random() * (1 - 100) + 1;
-// }
+const rolld100 = () => {
+  return Math.random() * 100 + 1;
+};
 
-export function rollItemsInArray(
+export const rollItemsInArray = (
   itemGroups,
   gossipScore,
   roll,
-  populationModifier
-) {
+  populationModifier,
+  autoRoll,
+  individualAutoRoll
+) => {
+  console.log(autoRoll);
   const availableItems = [];
+  const diceRoll = autoRoll ? rolld100() : roll;
+  console.log(diceRoll);
   itemGroups.forEach((group) => {
     const availableGroupItems = [];
     const { label, key, groupItems } = group;
@@ -18,37 +22,37 @@ export function rollItemsInArray(
         parseInt(populationModifier) + item.availability;
       switch (modifiedAvailabity) {
         case 1:
-          if (gossipScore - 30 >= roll) {
+          if (gossipScore - 30 >= diceRoll) {
             availableGroupItems.push(item);
           }
           break;
         case 2:
-          if (gossipScore - 20 >= roll) {
+          if (gossipScore - 20 >= diceRoll) {
             availableGroupItems.push(item);
           }
           break;
         case 3:
-          if (gossipScore - 10 >= roll) {
+          if (gossipScore - 10 >= diceRoll) {
             availableGroupItems.push(item);
           }
           break;
         case 4:
-          if (gossipScore >= roll) {
+          if (gossipScore >= diceRoll) {
             availableGroupItems.push(item);
           }
           break;
         case 5:
-          if (gossipScore + 10 >= roll) {
+          if (gossipScore + 10 >= diceRoll) {
             availableGroupItems.push(item);
           }
           break;
         case 6:
-          if (gossipScore + 20 >= roll) {
+          if (gossipScore + 20 >= diceRoll) {
             availableGroupItems.push(item);
           }
           break;
         case 7:
-          if (gossipScore + 30 >= roll) {
+          if (gossipScore + 30 >= diceRoll) {
             availableGroupItems.push(item);
           }
           break;
@@ -67,4 +71,4 @@ export function rollItemsInArray(
     availableItems.push(filteredGroupObject);
   });
   return availableItems;
-}
+};
